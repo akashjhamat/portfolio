@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+*{
+  margin: 0px;
+}
+body {
+  background: #FBFAF5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ProfilePic {
+  width: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TechStack_btn{
+  display: inline-flex;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin: 5px;
+  background-color: #1DA1F2;
+  color: #FBFAF5;
+  letter-spacing: 3px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yelpcamp_img{
+  width: 10%
 }
