@@ -6,14 +6,17 @@ function YelpCamp() {
     return (
 <>
     <div>
-      <p>Yelpcamp is a Yelp clone web application for campgrounds across the world.</p>
+        <div className="Description_btn">
+      <p className="yelpcamp_des">Yelpcamp is a Yelp clone web application for campgrounds across the world.</p>
       <button className="TechStack_btn">View Tech Stack</button>
-    </div>
-    <div>
+      </div>
+      <div className="Img_div">
         <a href="https://mighty-journey-28447.herokuapp.com/" target="_blank" rel="noreferrer">
         <img src={YelpCamp_img} alt="yelpcamp_img" className="yelpcamp_img"/>
         </a>
     </div>
+    </div>
+
 </>
     )
   }

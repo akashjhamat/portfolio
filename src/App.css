@@ -1,14 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
 
-*{
-  margin: 0px;
-}
+
 body {
   background: #FBFAF5;
-}
-
-.ProfilePic {
-  width: 10%;
 }
 
 .TechStack_btn{
@@ -17,13 +11,67 @@ body {
   border: none;
   border-radius: 10px;
   outline: none;
-  margin: 5px;
   background-color: #1DA1F2;
   color: #FBFAF5;
   letter-spacing: 3px;
+  vertical-align: top;
   cursor: pointer;
+  transition: opacity 1s,
+  color 1s;
+}
+
+.TechStack_btn:hover{
+  opacity: .7;
+}
+.TechStack_btn:active{
+  opacity: .1;
+}
+
+.intro1div{
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+
+.intro1{
+  width: 250px;
+}
+
+.intro2{
+  width: 230px;
+}
+
+.introImgDiv{
+  display: inline-block;
+  width: 500px
+}
+
+.ProfilePic{
+  width:100%
+}
+
+.EntireIntro{
+  margin-bottom: 100px;
+}
+
+.Description_btn{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.yelpcamp_des{
+  margin-top: 0px;
+}
+
+
+.Img_div{
+  display: inline-block;
+  width: 500px;
 }
 
 .yelpcamp_img{
-  width: 10%
+  display: inline-block;
+  width: 100%;
 }
+
