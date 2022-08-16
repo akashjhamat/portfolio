@@ -1,56 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/* Remove default margin */
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html{
+  height: 100%;
+}
+
+/* Set core body defaults */
 body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
   background: #FBFAF5;
-  height: 1000px;
+  min-height: 100%;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg{
+  max-width: 100%;
+  display: block;
 }
 
 
-
-.EntireIntro{
-  display: flex;
-  flex-direction: row;
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+
+.home{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .intro1div{
-  background-color: blue;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
- }
-
- .ProfilePicDiv{
-  flex: 1;
- }
-
-.ProfilePic{
-  width: 100%;
+  padding: 50px;
 }
 
+
 .EntireYelpCampDiv{
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .YelpCamp_desDiv{
-  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 50px;
 }
 
-.yelpcamp_img{
-  width:100%;
-}
 
 .TechStack_btn{
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
   padding: 5px 10px;
   border: none;
   border-radius: 10px;
@@ -62,6 +111,7 @@ body {
   cursor: pointer;
   transition: opacity 1s,
   color 1s;
+  margin-top: 25px;
 }
 
 .TechStack_btn:hover{
@@ -71,25 +121,55 @@ body {
   opacity: .1;
 }
 
-.EntireFooterDiv{
+
+.footer_div{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
-.IconDiv{
-  display: flex;
-  flex-direction: row;
-  width: 50PX;
-  justify-content: space-between;
+.social-links{
+  display: inline-block;
 }
 
-.ContactDiv{
+.contact-div{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.intro1{
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #25282B;
+}
+
+.intro2{
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #828282;
+}
+
+.yelpcamp_des{
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  color: #25282B;
+
+}
+
+.contact_p{
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
 
 

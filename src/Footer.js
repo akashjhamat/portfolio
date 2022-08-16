@@ -5,20 +5,16 @@ import LinkedIn_icon from "./linkedin-icon.svg"
 function Footer() {
     return (
 <>
-<div className="EntireFooterDiv">
-    <div className="IconDiv">
-    <a href="https://www.tiktok.com/@kashicreates" target="_blank" rel="noreferrer" >
-    <img src={TikTok_icon} alt="tiktok_icon"/>
-    </a>
-     <a href="https://www.linkedin.com/in/akashjhamat/" target="_blank" rel="noreferrer">
-     <img src={LinkedIn_icon} alt="linkedin_icon"/>
-     </a>
+    <footer className="footer_div">
+    <div className="social-icons">
+        <a className="social-links"href="https://www.tiktok.com/@kashicreates" target="_blank" rel="noreferrer" ><img src={TikTok_icon} alt="tiktok_icon"/></a>
+        <a className="social-links" href="https://www.linkedin.com/in/akashjhamat/" target="_blank" rel="noreferrer"><img src={LinkedIn_icon} alt="linkedin_icon"/></a>
+    </div>
+    <div className="contact-div">
+     <p className="contact_p">akashdeepjhamat@gmail.com</p>
+     <p className="contact_p">SF Bay Area</p>
      </div>
-     <div className="ContactDiv">
-     <p>akashdeepjhamat@gmail.com</p>
-     <p>SF Bay Area</p>
-     </div>
-     </div>
+     </footer>
 </>
     )
   }
